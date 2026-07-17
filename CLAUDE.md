@@ -36,10 +36,10 @@ Pure + deterministic (sorted node order; no wall clock / randomness).
 
 ```bash
 # one beat over the synthetic seed
-bb -cp 20-actors -m kizuna.methods.kizuna 20-actors/kizuna/data/seed-interactions.kotoba.edn
+bb --classpath src -m kizuna.methods.kizuna data/seed-interactions.kotoba.edn
 
 # tests (10 tests / 107 assertions)
-bb -cp 20-actors -m kizuna.tests.test-kizuna
+bb --classpath src:test run_tests.clj
 ```
 
 Seed run: 8 actors, 4 reciprocal pairs, 律速 = **kaname**, isolated = {niyaku, shionome},
@@ -49,10 +49,10 @@ Seed run: 8 actors, 4 reciprocal pairs, 律速 = **kaname**, isolated = {niyaku,
 
 | File | Purpose |
 |---|---|
-| `methods/kizuna.cljc` | graph / assess / tie-proposals / beat (R0 core) |
-| `tests/test_kizuna.cljc` | invariant + gate tests |
+| `src/kizuna/methods/kizuna.cljc` | graph / assess / tie-proposals / beat (R0 core) |
+| `test/kizuna/tests/test_kizuna.cljc` | invariant + gate tests |
 | `data/seed-interactions.kotoba.edn` | synthetic actor social events |
-| `manifest.jsonld` | actor manifest |
+| `manifest.edn` | canonical actor manifest |
 
 ## R1 follow-up
 

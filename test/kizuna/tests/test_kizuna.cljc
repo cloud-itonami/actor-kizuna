@@ -6,7 +6,8 @@
             #?(:clj [clojure.java.io :as io])
             [kizuna.methods.kizuna :as k]))
 
-#?(:clj (def actor-dir (-> *file* io/file .getParentFile .getParentFile)))
+#?(:clj (def actor-dir
+          (-> *file* io/file .getParentFile .getParentFile .getParentFile .getParentFile)))
 #?(:clj (def seed (io/file actor-dir "data" "seed-interactions.kotoba.edn")))
 #?(:clj (def events (k/load-events seed)))
 

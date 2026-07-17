@@ -1,0 +1,11 @@
+{:repository/name "com-etzhayyim-kizuna"
+ :repository/category :actor
+ :repository/canonical-format :edn
+ :repository/canonical-metadata "manifest.edn"
+ :repository/canonical-identity "identity.edn"
+ :repository/dependencies "dependencies.edn"
+ :repository/source-roots ["src" "methods"]
+ :repository/test-roots ["test"]
+ :repository/canonical-data ["actor.edn" "schema.edn" "kotoba.app.edn"
+                             "data/seed-interactions.kotoba.edn"]
+ :repository/legacy-artifacts-forbidden ["manifest.jsonld" "tests"]}

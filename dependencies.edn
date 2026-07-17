@@ -1,0 +1,11 @@
+{:dependencies
+ [{:dependency/id etzhayyim/root
+   :dependency/repository "https://github.com/etzhayyim/root"
+   :dependency/revision "8e10be3dcdbf7d3ee8c63dc5539c18fb2546ba13"
+   :dependency/paths ["90-docs/adr"]}
+  {:dependency/id com.etzhayyim/kaname :dependency/revision "5e390fb341c4e5f27777f010cba55c463d3e152b"}
+  {:dependency/id com.etzhayyim/ossekai :dependency/revision "d21a056aba4c4d535ab9f556ac5beb34c4ad548d"}
+  {:dependency/id org.kotoba-lang/kototama
+   :dependency/revision "65899deed4fb9cfa3cdfed9d21130c91982d8cd3"
+   :dependency/west-path "orgs/kotoba-lang/kototama"
+   :dependency/paths ["lib/actor/publish.bb"]}]}
