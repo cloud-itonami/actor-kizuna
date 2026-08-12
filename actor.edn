@@ -1,4 +1,4 @@
-{:did        "did:web:etzhayyim.github.io:com-etzhayyim-kizuna"
+{:did        "did:web:etzhayyim.com:actor:kizuna"
  :handle     "kizuna.etzhayyim.com"
  :ipns-key   "kizuna-actor"
  :graph-type "com.etzhayyim.kizuna.graph"
