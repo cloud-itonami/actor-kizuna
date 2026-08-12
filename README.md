@@ -3,6 +3,13 @@
 Actor-to-actor reciprocal-tie observatory for the Etzhayyim mesh. The actor proposes
 connections; it does not actuate follows or hold member/server keys.
 
+Canonical repository: `etzhayyim/actor-kizuna`.
+
+Within the Tamaki artificial organism, kizuna is the relationship-proposal
+organ. It models actor-to-actor reciprocity only: people are not represented,
+no follow is automatic, and any action remains delegated to ossekai/member
+authority through the existing CACAO gates.
+
 Canonical repository contracts are EDN:
 
 - `manifest.edn` — actor gates and integrations
