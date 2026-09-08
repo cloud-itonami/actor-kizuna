@@ -21,7 +21,7 @@
    G3 AGENT-only — nodes are actors (agent-centric, ADR-2606232100); a `:person/*` node is
       unrepresentable (person-excluded).
    G4 no-server-key — kizuna READS own actors' public repos + PROPOSES; it holds no key."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.set :as set]
             [clojure.edn :as edn]
             #?(:clj [clojure.java.io :as io])))
