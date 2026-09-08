@@ -2,7 +2,7 @@
   "kizuna 絆 — actor-social self-evolution + SoS tests (ADR-2606232200). Verifies the
   loop's mathematical + constitutional invariants on the synthetic seed."
   (:require [clojure.test :refer [deftest is testing run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             #?(:clj [clojure.java.io :as io])
             [kizuna.methods.kizuna :as k]))
 
