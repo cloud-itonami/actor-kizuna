@@ -36,10 +36,10 @@ Pure + deterministic (sorted node order; no wall clock / randomness).
 
 ```bash
 # one beat over the synthetic seed
-bb --classpath src -m kizuna.methods.kizuna data/seed-interactions.kotoba.edn
+kbb --classpath src -m kizuna.methods.kizuna data/seed-interactions.kotoba.edn
 
 # tests (10 tests / 107 assertions)
-bb --classpath src:test run_tests.cljk
+kbb --classpath src:test run_tests.cljk
 ```
 
 Seed run: 8 actors, 4 reciprocal pairs, 律速 = **kaname**, isolated = {niyaku, shionome},

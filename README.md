@@ -21,5 +21,5 @@ Canonical repository contracts are EDN:
 Run the complete standalone suite with:
 
 ```bash
-bb --classpath src:test run_tests.cljk
+kbb --classpath src:test run_tests.cljk
 ```
