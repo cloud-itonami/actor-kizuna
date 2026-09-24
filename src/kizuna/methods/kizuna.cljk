@@ -23,7 +23,7 @@
    G4 no-server-key — kizuna READS own actors' public repos + PROPOSES; it holds no key."
   (:require [kotoba.lang.text :as str]
             [clojure.set :as set]
-            [clojure.edn :as edn]
+            [kotoba.lang.edn :as edn]
             #?(:clj [clojure.java.io :as io])))
 
 (def social-kinds #{":follow" ":mention" ":like" ":post"})
