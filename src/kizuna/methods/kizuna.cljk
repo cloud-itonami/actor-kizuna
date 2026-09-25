@@ -24,7 +24,7 @@
   (:require [kotoba.lang.text :as str]
             [kotoba.lang.coll :as set]
             [kotoba.lang.edn :as edn]
-            #?(:clj [clojure.java.io :as io])))
+            #?(:clj [kotoba.io :as io])))
 
 (def social-kinds #{":follow" ":mention" ":like" ":post"})
 ;; interaction weights for the integration scalar (a standing follow weighs more than
@@ -261,7 +261,7 @@
 #?(:clj
    (defn -main [& args]
      (let [path (or (first args)
-                    (-> *file* io/file .getParentFile .getParentFile
+                    (-> *file* io/file io/parent-file io/parent-file
                         (io/file "data" "seed-interactions.kotoba.edn") str))
            r (beat (load-events path))]
        (println "kizuna 絆 beat:")
