@@ -3,11 +3,11 @@
   loop's mathematical + constitutional invariants on the synthetic seed."
   (:require [kotoba.test :refer [deftest is testing run-tests]]
             [kotoba.lang.text :as str]
-            #?(:clj [clojure.java.io :as io])
+            #?(:clj [kotoba.io :as io])
             [kizuna.methods.kizuna :as k]))
 
 #?(:clj (def actor-dir
-          (-> *file* io/file .getParentFile .getParentFile .getParentFile .getParentFile)))
+          (-> *file* io/file io/parent-file io/parent-file io/parent-file io/parent-file)))
 #?(:clj (def seed (io/file actor-dir "data" "seed-interactions.kotoba.edn")))
 #?(:clj (def events (k/load-events seed)))
 
@@ -69,10 +69,10 @@
 
 (deftest test-G3-agent-only-person-unrepresentable
   (testing "a person/human node is refused at parse (agent-centric)"
-    (is (thrown? #?(:clj clojure.lang.ExceptionInfo :default :default)
+    (is (thrown? :default
                  (k/graph [{":sev/from" "tsumugi" ":sev/to" "kaname" ":sev/kind" ":follow"}
                            {":sev/from" "alice" ":sev/human" true ":sev/kind" ":post"}])))
-    (is (thrown? #?(:clj clojure.lang.ExceptionInfo :default :default)
+    (is (thrown? :default
                  (k/graph [{":person/name" "bob" ":sev/kind" ":post"}])))))
 
 (deftest test-proposals-improve-connectivity
