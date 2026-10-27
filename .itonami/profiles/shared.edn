@@ -7,6 +7,6 @@
  :profile/id "actor-kizuna"
  :profile/default? true
  :bot/name "actor-kizuna"
- :bot/brief "etzhayyim/actor-kizuna の常駐 actor。charter に従って行動する。"
- :bot/context-refs [{:kind "repo" :target "etzhayyim/actor-kizuna"}]
+ :bot/brief "cloud-itonami/actor-kizuna の常駐 actor。charter に従って行動する。"
+ :bot/context-refs [{:kind "repo" :target "cloud-itonami/actor-kizuna"}]
  :bot/tools-requested []}
